@@ -1,0 +1,68 @@
+<section class="panel-manager-container">
+  <button (click)="visible = !visible" class="btn btn-primary open-button">
+    Abrir filtros
+  </button>
+</section>
+
+<section class="advanced-searcher container" [hidden]="!visible">
+  <div class="row">
+    <div class="offset-sm-11 col-sm-1 close-container">
+      <i class="pi pi-times close-icon" (click)="closePanel()"></i>
+    </div>
+    <div class="col-md-12 advanced-searcher__searcher">
+      <div class="advanced-searcher__searcher-title">hola</div>
+      <form class="row mb-2">
+        <div class="col-md-6 mb-3">
+          <input
+            pInputText
+            type="text"
+            placeholder="Search by Name"
+            class="p-column-filter"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            pInputText
+            type="text"
+            placeholder="Search by Name"
+            class="p-column-filter"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            pInputText
+            type="text"
+            placeholder="Search by Name"
+            class="p-column-filter"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            pInputText
+            type="text"
+            placeholder="Search by Name"
+            class="p-column-filter"
+          />
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6 button-container">
+      <button
+        (click)="visible = !visible"
+        style="width: 100%"
+        class="btn btn-primary"
+      >
+        Aplicar
+      </button>
+    </div>
+    <div class="col-md-6 button-container">
+      <button
+        (click)="visible = !visible"
+        style="width: 100%"
+        class="btn btn-secondary"
+      >
+        Limpiar filtros
+      </button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+// @import '~bootstrap/scss/bootstrap/scss/bootstrap-grid.scss';
+@font-face {
+  font-family: "KabrioSoft";
+  src: url(./assets/fonts/KabrioSoft-Light.ttf) format("truetype");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "KabrioSoft";
+  src: url(./assets/fonts/KabrioSoft-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "KabrioSoft";
+  src: url(./assets/fonts/KabrioSoft-ExtraBold.ttf) format("truetype");
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: "KabrioSoft";
+  src: url(./assets/fonts/KabrioSoft-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url(./assets/fonts/RobotoCondensed-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url(./assets/fonts/RobotoCondensed-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+
+:root {
+  --font-primary: "KabrioSoft";
+  --font-secondary: "Roboto Condensed";
+  --font-secondary-regular: "Roboto";
+}
+
+.btn,
+a,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+label,
+li,
+p,
+select,
+th,
+tr,
+span {
+  font-family: var(--font-primary);
+  text-decoration: none;
+  font-size: 13px;
+}

@@ -1,0 +1,29 @@
+:host ::ng-deep {
+  .p-datatable {
+    font-size: 12px;
+    width: 100%;
+  }
+  .p-inputtext {
+    font-size: 12px;
+    padding: 5px;
+    width: 100%;
+    font-family: var(--font-primary);
+  }
+  .p-paginator {
+    font-size: 12px;
+  }
+  .p-paginator .p-paginator-pages .p-paginator-page {
+    font-size: 12px;
+    min-width: 2rem;
+    height: 2rem;
+  }
+  .p-paginator .p-dropdown {
+    height: 2rem;
+  }
+  .p-dropdown {
+    align-items: center;
+  }
+  .pi {
+    font-size: 0.7rem;
+  }
+}
